@@ -19,6 +19,15 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
@@ -33,7 +42,16 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span id="logo">tweeter</span>
+      <div class="right-side-nav">
+        <p>
+          <span class="bolded">Write</span>
+          <span class="light">a new tweet!</span>
+        </p>
+        <button class="scroll">
+          <i class="fa-solid fa-angles-down"></i>
+        </button>
+      </div>
     </nav>
 
     <!-- Page-specific (main) content here -->

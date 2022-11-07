@@ -1,1 +1,43 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #ffffff;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  justify-content: space-between;
+}
 
+#logo {
+  display: flex;
+  font-family: "Bungee", sans-serif;
+  align-items: center;
+  font-size: 200%;
+}
+
+.right-side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side-nav p {
+  margin-bottom: 0.1em;
+}
+
+.bolded {
+  font-weight: 600;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.scroll {
+  border: none;
+  color: rgb(209, 16, 16);
+  background-color: #4056a1;
+}
