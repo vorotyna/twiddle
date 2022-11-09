@@ -68,8 +68,26 @@ const renderTweets = function(data) {
   }
 };
 
-
-// 
+// Form submission using JQuery
 $(document).ready(function() {
+  console.log("The document is ready!");
+
+  $("#submit-tweet").on("submit", function(event) {
+    console.log("Tweet submitted");
+    event.preventDefault();
+
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: $("#submit-tweet").serialize(),
+    })
+      .then(function(result) {
+        console.log("Tweet has been sent to the server");
+        $("#tweet-text").val('');
+      })
+      .catch(function(error) {
+        console.log("error", error);
+      });
+  });
   renderTweets(data);
 });
