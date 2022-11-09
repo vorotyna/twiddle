@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet-history.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -74,7 +75,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <div class="new-tweet">
-        <form action="  s" method="POST" id="submit-tweet">
+        <form action=" /tweets" method="POST" id="submit-tweet">
           <textarea
             name="text"
             id="tweet-text"
@@ -87,6 +88,34 @@
           </div>
         </form>
       </div>
+      <article class="tweet-container">
+        <header>
+          <div class="top-left">
+            <img src="/images/profile-hex.png" />
+            <h3>Newton</h3>
+          </div>
+          <h4>@SirIsaac</h4>
+        </header>
+        <div class="tweet-text">
+          <p>
+            If I have seen further it is by standing on the shoulders of giants
+          </p>
+        </div>
+        <footer>
+          <p>10 days ago</p>
+          <div class="icons">
+            <button>
+              <i class="fa-solid fa-flag fa-xs"></i>
+            </button>
+            <button>
+              <i class="fa-sharp fa-solid fa-retweet fa-xs"></i>
+            </button>
+            <button>
+              <i class="fa-sharp fa-solid fa-heart fa-xs"></i>
+            </button>
+          </div>
+        </footer>
+      </article>
     </main>
   </body>
 </html>

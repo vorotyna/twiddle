@@ -8,7 +8,7 @@
   align-content: space-around;
 }
 
-form {
+#submit-tweet {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
