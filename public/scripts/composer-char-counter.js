@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  console.log('The document is ready!)');
+  console.log('The document is ready!');
 
   // Make character counter count characters in textarea
   $('#tweet-text').on('input', function(event) {

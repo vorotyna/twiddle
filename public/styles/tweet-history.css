@@ -1,14 +1,20 @@
-.tweet-container {
-  border: 2px solid #545149;
+#tweets-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 100px;
 }
 
-.tweet-container:hover {
+.tweets {
+  border: 2px solid #545149;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.tweets:hover {
   box-shadow: 5px 5px rgba(64, 86, 161, 0.33);
 }
 
-.tweet-container header {
+.tweets header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,7 +38,7 @@
   font-weight: 100;
 }
 
-.tweet-container h4 {
+.tweets h4 {
   font-weight: 600;
   opacity: 30%;
   color: #4056a1;
