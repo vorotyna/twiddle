@@ -59,6 +59,9 @@ $(document).ready(function() {
         data: $("#submit-tweet").serialize(),
       })
         .then(function(newResult) {
+          $("#tweet-text").val('');
+          $(".counter").val('140');
+
           loadTweets();
         })
         .catch(function(error) {
