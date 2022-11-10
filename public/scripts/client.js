@@ -1,3 +1,10 @@
+// Function to escape malicious injections
+const escape = function(str) {
+  let p = document.createElement("p");
+  p.appendChild(document.createTextNode(str));
+  return p.innerHTML;
+};
+
 // Function turns tweet object into HTML tweet article
 const createTweetElement = function(data) {
   let newTweet = `
@@ -11,7 +18,7 @@ const createTweetElement = function(data) {
       </header>
       <div class="tweet-text">
         <p>
-          ${data.content.text}
+          ${escape(data.content.text)}
         </p>
       </div>
       <footer>
@@ -86,7 +93,7 @@ $(document).ready(function() {
       url: "/tweets",
     })
       .then(function(newResult) {
-        $("#tweet-text").html(renderTweets(newResult));
+        $("#tweet-text").text(renderTweets(newResult));
       })
       .catch(function(error) {
         console.log("error", error);
