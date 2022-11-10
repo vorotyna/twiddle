@@ -15,7 +15,7 @@ const createTweetElement = function(data) {
         </p>
       </div>
       <footer>
-        <p>${data.created_at}</p>
+        <p>${timeago.format(data.created_at)}</p>
         <div class="icons">
         <button>
           <i class="fa-solid fa-flag fa-xs"></i>
