@@ -35,6 +35,16 @@ const createTweetElement = function(data) {
 
 // Function appends array of tweet objects into tweet article
 const renderTweets = function(data) {
+  data.sort((a, b) => {
+    if (a.created_at > b.created_at) {
+      return -1;
+    }
+    if (a.created_at < b.created_at) {
+      return 500;
+    }
+    return 0;
+  });
+
   $('#tweets-container').empty();
   for (let tweet of data) {
     const newTweetElement = createTweetElement(tweet);
