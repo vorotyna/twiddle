@@ -48,17 +48,24 @@ $(document).ready(function() {
 
   $("#submit-tweet").on("submit", function(event) {
     event.preventDefault();
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $("#submit-tweet").serialize(),
-    })
-      .then(function(newResult) {
-        loadTweets();
+    if (!$.trim($("#tweet-text").val())) {
+      alert("Tweet cannot be empty!");
+    } else if ($("#tweet-text").val().length > 140) {
+      alert("Tweets exceeds 140 characters!");
+    } else {
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: $("#submit-tweet").serialize(),
       })
-      .catch(function(error) {
-        console.log("error", error);
-      });
+        .then(function(newResult) {
+          loadTweets();
+        })
+        .catch(function(error) {
+          console.log("error", error);
+        });
+    }
+
   });
   const loadTweets = function() {
     $.ajax({
