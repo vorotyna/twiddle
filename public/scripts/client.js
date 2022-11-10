@@ -62,13 +62,15 @@ const renderTweets = function(data) {
 // Form submission using JQuery
 $(document).ready(function() {
   console.log("The document is ready!");
-
+  $("#error-class").hide();
   $("#submit-tweet").on("submit", function(event) {
     event.preventDefault();
     if (!$.trim($("#tweet-text").val())) {
-      alert("Tweet cannot be empty!");
+      $("#error-class").text("Tweet cannot be empty!").slideDown();
+      $("#error-class").show();
     } else if ($("#tweet-text").val().length > 140) {
-      alert("Tweets exceeds 140 characters!");
+      $("#error-class").text("Tweet cannot be longer than 140 characters!").slideDown();
+      $("#error-class").show();
     } else {
       $.ajax({
         method: "POST",
@@ -76,6 +78,7 @@ $(document).ready(function() {
         data: $("#submit-tweet").serialize(),
       })
         .then(function(newResult) {
+          $("#error-class").hide();
           $("#tweet-text").val('');
           $(".counter").val('140');
 
