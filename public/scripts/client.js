@@ -62,6 +62,8 @@ const renderTweets = function(data) {
 // Form submission using JQuery
 $(document).ready(function() {
   console.log("The document is ready!");
+
+  // Error submissions for empty or too long tweets
   $("#error-class").hide();
   $("#submit-tweet").on("submit", function(event) {
     event.preventDefault();
@@ -72,6 +74,8 @@ $(document).ready(function() {
       $("#error-class").text("Tweet cannot be longer than 140 characters!").slideDown();
       $("#error-class").show();
     } else {
+
+      // JQuery AJAX method to refresh tweet history upon tweet submission
       $.ajax({
         method: "POST",
         url: "/tweets",
