@@ -1,0 +1,46 @@
+/* Media query for small screen */
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    background-color: transparent;
+    font-size: large;
+    position: absolute;
+  }
+  #logo {
+    display: flex;
+    font-size: 150%;
+  }
+  .scroll {
+    color: rgb(209, 16, 16);
+    background-color: transparent;
+  }
+  header {
+    display: flex;
+    padding-top: 80px;
+  }
+  main {
+    display: flex;
+  }
+}
+
+/* Media query for large desktop screen */
+@media only screen and (min-width: 769px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  body > header {
+    width: 30%;
+    margin-top: 180px;
+    margin-left: 70px;
+  }
+  .container {
+    width: 65%;
+    float: right;
+    margin: 130px 0px 0px;
+  }
+  .tweets {
+    display: flex;
+    flex-direction: column;
+  }
+}
