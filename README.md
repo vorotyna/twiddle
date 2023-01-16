@@ -1,22 +1,22 @@
-# Tweeter - A Front End Project
+# Twiddle - A Front End Project
 
-Tweeter is a simple, single-page Twitter clone.
+Twiddle is a simple, single-page Twitter clone.
 
 - Utilizing HTML, CSS, JS, Jquery, Ajax requests and a backend of NodeJS, Express, and an in-memory-Object database.
 
 ## Final Product
 
-### Main Tweeter page
+### Main Twiddle page
 
-!["Main Tweeter page"](https://github.com/vorotyna/tweeter/blob/master/docs/main-page.png?raw=true)
+!["Main Twiddle page"](https://github.com/vorotyna/tweeter/blob/master/docs/main-page.png?raw=true)
 
-### Main Tweeter page with error
+### Main Twiddle page with error
 
-!["Main Tweeter page with error"](https://github.com/vorotyna/tweeter/blob/master/docs/error-message.png?raw=true)
+!["Main Twiddle page with error"](https://github.com/vorotyna/tweeter/blob/master/docs/error-message.png?raw=true)
 
-### Responsive Tweeter page for mobile view
+### Responsive Twiddle page for mobile view
 
-!["Responsive Tweeter page for mobile view"](https://github.com/vorotyna/tweeter/blob/master/docs/mobile.png?raw=true)
+!["Responsive Twiddle page for mobile view"](https://github.com/vorotyna/tweeter/blob/master/docs/mobile.png?raw=true)
 
 ## Getting Started
 
