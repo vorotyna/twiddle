@@ -8,15 +8,15 @@ Twiddle is a simple, single-page Twitter clone.
 
 ### Main Twiddle page
 
-!["Main Twiddle page"](https://github.com/vorotyna/tweeter/blob/master/docs/main-page.png?raw=true)
+!["Main Twiddle page"](https://github.com/vorotyna/twiddle/blob/master/docs/main-page.png?raw=true)
 
 ### Main Twiddle page with error
 
-!["Main Twiddle page with error"](https://github.com/vorotyna/tweeter/blob/master/docs/error-message.png?raw=true)
+!["Main Twiddle page with error"](https://github.com/vorotyna/twiddle/blob/master/docs/error-message.png?raw=true)
 
 ### Responsive Twiddle page for mobile view
 
-!["Responsive Twiddle page for mobile view"](https://github.com/vorotyna/tweeter/blob/master/docs/mobile.png?raw=true)
+!["Responsive Twiddle page for mobile view"](https://github.com/vorotyna/twiddle/blob/master/docs/mobile.png?raw=true)
 
 ## Getting Started
 
